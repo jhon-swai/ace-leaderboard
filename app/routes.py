@@ -29,16 +29,8 @@ def leaderboard():
 @app.route('/leaderboard/<number>', methods=["POST"])
 def leaderboard_referral():
     
-    get_scores = Score.query.all()
-    data =[]
-    for score in get_scores:
-        data.append(score.total)
-
-    data_dict = {}
-    num = 0
-    for val in data:
-        data_dict[num]=val
-        num+=1
+    # this can be updated 
+    data_dict = {"status": "updated"}
 
     return jsonify(data_dict)
 
