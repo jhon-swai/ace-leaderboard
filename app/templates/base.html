@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+        <!-- Bootstrap CSS -->
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+        />
+
+        <link
+            href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            rel="stylesheet"
+            id="bootstrap-css"
+        />
+
+        
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+
+    </head>
+    <body>
+        <div class="container-fluid" style="background-color: #376ad3; font-family: sans-serif;">
+
+            
+            <div class="container " style="padding-top: 20px;">
+                
+                <h1 class="text-light">College of Information and Communication Technologies</h1>
+                <div class="row text-light" style="padding-bottom: 10px">
+
+                    <h3 class="text-seondary col" style="color:#8b8cd6;">University of Dar Es Salaam</h3>
+
+                    <form class="d-flex col-3" style="background-color:#2b53a5; padding: 1px 1px 1px 20px;">
+                        <i class="fa fa-search" style="padding: 10px 5px 10px 0; "></i>
+                        <input class="form-control me-2 text-light" type="search" placeholder="Search" aria-label="Search"  style="background-color: transparent; border-radius:0; border:none; padding:0 20px 0 5px; color:white;">
+                        <button class="btn btn-primary" type="submit"  style="background-color:#1493c7; padding: ">Go</button>
+                    </form>
+
+                </div>
+                
+            </div>
+
+            <div class="container text-dark bg-light" style="padding: 0;">
+                <ul class="nav nav-tabs justify-content-center nav-fill" style="padding: 0;">
+                    <li class="nav-item">
+                        <a class="nav-link active " href="#" style="background-color: #1493c7; color:white;">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">CONTACTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">ACADEMICS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">RESEARCH</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" id="itServicesDropdown" role="button" data-toggle="dropdown" aria-expanded="false">IT SERVICES</a>
+                        <ul class="dropdown-menu" aria-labelledby="itServicesDropdown">
+                            <li><a class="dropdown-item" href="http://172.20.10.4:8080/">e-Library</a></li>
+                            <li><a class="dropdown-item">UDSM travel permit</a></li>
+                            <li><a class="dropdown-item">Postgraduate Management Information System</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">SHORT COURSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">STAFF</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            
+
+        </div>
+        <div class="container">
+
+            {% block content %}{% endblock %}
+
+        </div>
+        
+    </body>
+
+</html>
